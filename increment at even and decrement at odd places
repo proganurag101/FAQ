@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+
+int main(){
+string str;
+cin>>str;
+for(int i;i<str.size();i++){
+    if((str[i]-0)%2==0){
+        cout<<(str[i]-'0')+1;  
+    }else{
+        cout<<(str[i]-'0'-1);
+    }
+}
+
+
+
+
+return 0;
+ }
