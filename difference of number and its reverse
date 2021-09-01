@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+
+int main(){
+    string s,newstr;
+
+    cin>>s;
+
+    int len = s.length();
+    for(int i;i<s.length();i++){
+        newstr += s[len-i-1];
+    }
+    int y = stoi(s);                                 //string to integer,we do for int to string -> to_string(desired_num);
+    int x = stoi(newstr);                           
+
+    int num = (x>y)?(x-y):(y-x);
+    cout<<num;
+
+
+
+
+
+
+
+
+return 0;
+}
