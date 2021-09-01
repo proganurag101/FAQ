@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+
+
+int main(){
+int size;
+	cin>>size;
+	vector<int> vec;
+	for(int i;i<size;i++){
+        int k;
+        cin>>k;
+        vec.push_back(k);
+	}
+  
+	int a,b;   //a and b are the inital and final indexes
+	cin>>a>>b;
+
+	reverse(vec.begin()+a,vec.begin()+b+1);
+
+	for(auto n : vec){
+        cout<<n<<" ";
+	}
+
+
+
+
+return 0;
+ }
+
