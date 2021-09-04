@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+--Reverse a string:-
+//method 1.
+string s;
+cin>>s;
+int n = s.length();
+for(int i{0};i<n;i++){
+	cout<<s[n-i-1]<<" "; 
+}
+
+//method-2
+for(int i=n;i>=0;i--){
+    cout<<s[i]<<endl;
+}
+return 0;
+}
