@@ -1,0 +1,40 @@
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+
+int main(){
+
+int n;
+cin>>n;
+bool c=1;
+//brute force.
+for(int i=2;i<n;i++){   //as 1 divides all and is considered prime.
+    if(n%i==0){
+        c = 1;
+    }
+}
+cout<<std::boolalpha<<endl;
+    if(c == 1){
+        cout<<"NUMBER IS PRIME: "<<c<<endl;
+    }
+    
+    
+ //efficient method;
+
+int n;
+cin>>n;
+bool c = 1;
+for(int i=2;i<sqrt(n);i++){
+    if(n%i==0){
+        c = 0;
+    }
+}
+cout<<boolalpha<<endl;
+cout<<"Number is Prime: "<<c<<endl;
+
+    
+return 0;
+}
