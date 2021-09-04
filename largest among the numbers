@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+//using logic
+
+int arr[10];
+int maxm{INT_MIN},minm{INT_MAX};
+for(int i{};i<10;i++){
+    cin>>arr[i];
+}
+for(int i{};i<10;i++){
+        if(maxm<arr[i]){
+            maxm = arr[i];
+        }else if(minm>arr[i]){
+            minm = arr[i];
+        }
+}
+
+//using inbuilt functions
+
+for(int i{};i<10;i++){
+    minm = min(minm,arr[i]);
+    maxm = max(maxm,arr[i]);
+}
+
+
+
+
+cout<<maxm<<" "<<minm<<endl;
+return 0;
+
+}
