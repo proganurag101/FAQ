@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+
+int main(){
+int n1,n2;
+cin>>n1>>n2;
+int gcd{INT_MIN};
+for(int i=1;i<=n1;i++){ //hcf/gcd can not be greater than the smallest no. as any number greater than the two numbers will not divide the smallest number.
+	if(n1%i==0 && n2%i==0){
+		gcd=max(gcd,i);
+	}
+}
+cout<<gcd<<endl;
+
+return 0;
+}
