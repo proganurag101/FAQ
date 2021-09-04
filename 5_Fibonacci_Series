@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+//fibonacci series :- a series of numbers which has the numbers in increasing order with every next number has sum of previous two numbers.
+0 1 1 2 3 5 8 13 21.......
+int fibonacci(long long n){
+    if (n<=1){
+        return n;
+    }
+    return fibonacci(n-1)+fibonacci(n-2);
+
+}
+
+
+int main(){
+
+int n;
+cin>>n;
+int i=0;
+while(i!=n){  //as soon as the i becomes n it stops the loop.
+    cout<<fibonacci(i)<<" ";
+    i++;
+}
+
+
+
+return 0;
+
+}
