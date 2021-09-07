@@ -1,0 +1,15 @@
+
+#include<iostream>
+using namespace std;
+
+
+
+
+
+int main(){
+string a{"yoyo"},b{" honeysingh!"};
+cout<<a+b<<endl;
+
+
+return 0;
+}
