@@ -1,0 +1,22 @@
+
+#include<iostream>
+using namespace std;
+
+
+void swapn(int &a,int &b){
+    int temp = a;    //stores value of a.
+    a = b;           //a is reassigned value of b.
+    b = temp;        //b is reassigned value of temp.
+}
+
+
+
+int main(){
+int x{10},y{14};
+swapn(x,y);
+
+cout<<"x: "<<x<<" "<<"y: "<<y<<endl;
+
+
+return 0;
+}
