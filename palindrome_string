@@ -1,0 +1,41 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+void palindrome(string &s1,string &s2){
+
+cout<<((s1==s2)?"it's a palindrome!":"it's not a palindrome!")<<endl;       //just to look cool!
+
+it's same as:
+if(s1==s2){
+//statement1;
+}else{
+//statemen2;
+}
+
+
+int main(){
+
+bool quit{0};
+while(quit!=1){
+string s{},newstr{};
+cin>>s;
+int n = s.length();
+
+for(int i{0};i<n;i++){
+    newstr +=s[n-i-1];
+}
+
+    palindrome(s,newstr);
+    cout<<"do you want to check more strings?y/n"<<endl;
+    char select{};
+    cin>>select;
+    if(select=='n'){
+        quit = 1;
+    }
+}
+
+
+
+	return 0;
+}
