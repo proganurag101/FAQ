@@ -1,0 +1,17 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+
+
+int main(){
+int a{10},b{50};
+a = a+b;  //50 + 10 = 60
+b = a-b;  //60-  50 = 10
+a = a-b;  //60 - 10 = 50 now, a=50 and b = 10.
+cout<<a<<" "<<b<<endl;
+
+
+
+    return 0;
+}
