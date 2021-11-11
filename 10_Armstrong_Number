@@ -11,9 +11,9 @@ int n{};
 cin>>n;
 int sum{},last_digit{};
 while(n>0){
-        last_digit = n%10;
+        last_digit = n%10;                          //after dividing the n by 10 the last digit will come out as remainder
         sum += pow(last_digit,3);
-        n = (n/10);
+        n = (n/10);                                 //after dividing the quotient will come as the remaing digit after removing the last remainder
 }
 cout<<sum<<endl;
 if(sum==n){
